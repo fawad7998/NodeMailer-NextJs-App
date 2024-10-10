@@ -25,10 +25,10 @@ export async function POST(request) {
     await transporter.verify();
 
     const mailOptions = {
-      from: email,
-      to: process.env.GMAIL_USER,
+      from: process.env.GMAIL_USER,
+      to: 'salizahid75@gmail.com',
       subject: subject,
-      text: message,
+      text: `Hey Admin, new contact email received from email: ${email} with subject: ${subject} and message: ${message}`,
     };
 
     // Send mail
