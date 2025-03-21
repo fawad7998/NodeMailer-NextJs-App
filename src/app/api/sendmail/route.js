@@ -26,7 +26,7 @@ export async function POST(request) {
 
     const mailOptions = {
       from: process.env.GMAIL_USER,
-      to: 'salizahid75@gmail.com',
+      to: 'fawad7998@gmail.com',
       subject: subject,
       html: `
     <div style="font-family: 'Helvetica Neue', Arial, sans-serif; color: #333; background-color: #f4f4f4; padding: 20px;">
